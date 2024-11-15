@@ -1,5 +1,5 @@
 EXE		= dtmf2num
-CFLAGS	+= -O2 -s
+CFLAGS	+= -O2
 PREFIX	= /usr/local
 BINDIR	= $(PREFIX)/bin
 LIBS	= -lm
@@ -12,6 +12,9 @@ all:
 install:
 	install -m 755 -d $(BINDIR)
 	install -m 755 $(EXE) $(BINDIR)/$(EXE)
+
+clean:
+        rm *.o dtmf2num
 
 .PHONY:
 	install
