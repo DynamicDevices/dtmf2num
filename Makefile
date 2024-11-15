@@ -14,7 +14,7 @@ install:
 	install -m 755 $(EXE) $(BINDIR)/$(EXE)
 
 clean:
-        rm *.o dtmf2num
+	rm *.o dtmf2num
 
 .PHONY:
 	install
